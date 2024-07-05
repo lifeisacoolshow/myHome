@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>skills</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<style>
+		#menu{
+			opacity: 80%;
+		}
+		#menu a:hover{
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo"><a href="index.html">portfolio <span>by Younghyun</span></a></div>
+		<a href="#menu"><span>Menu</span></a>
+	</header>
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="skills.html">Skills</a></li>
+			<li><a href="project.html">Project</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="join.html">Join</a></li>
+		</ul>
+	</nav>
+	<!-- Skills -->
+	<style>
+		li{
+			list-style-type: none;
+		}
+		#skillBox1{
+			background-color: #222;
+			width: 28%;
+			height: 600px;
+			float: left;
+			margin: 20px;
+			border-radius: 20px;
+			text-align: center;
+		}
+		#skillBox2{
+			background-color: #222;
+			width: 28%;
+			height: 600px;
+			float: left;
+			margin: 20px;
+			border-radius: 20px;
+			text-align: center;
+		}
+		#skillBox3{
+			background-color: #222;
+			width: 210px;
+			height: 600px;
+			float: left;
+			margin: 20px;
+			border-radius: 20px;
+			text-align: center;
+		}
+		#skillBox1 img, #skillBox2 img, #skillBox3 img{
+			width: 120px;
+			height: 120px;
+			object-fit: scale-down;
+		}
+		@keyframes postAni{
+			25%{
+				transform: rotate(2deg) scale(1.01);
+			}
+			50%{
+				transform: rotate(0deg) scale(1);
+			}
+			75%{
+				transform: rotate(-2deg) scale(1.01);
+			}
+		}
+		#skillBox1:hover, #skillBox2:hover, #skillBox3:hover{
+			opacity:0.9;
+			animation: postAni 0.8s linear 1;
+		}
+	</style>
+	<section id="post" class="wrapper bg-img" data-bg="star.png">
+		<div class="inner">
+			<article class="box">
+				<header>
+					<h2 style="text-align: center; font-size: 2.5em;">Skills🛠️</h2>
+				</header>
+				<div class="contentBox">
+					<div id="skillBox1"><br>
+						<li style="font-size: 1.4em;"><b>Frontend</b></li>
+						<li><img src="./images/html (2).png"></li>
+						<li><img src="./images/css.png"></li>
+						<li><img src="./images/js.png"></li>
+						<li><img src="./images/jquery.png"></li>
+					</div>
+					<div id="skillBox2"><br>
+						<li style="font-size: 1.4em;"><b>Back&VCS</b></li>
+						<li><img src="./images/java.png"></li>
+						<li><img src="./images/mysql.png" style="margin-top: 20px;"></li>
+						<li><img src="./images/git2.png" style="margin-top: 20px;"></li>
+						<li><img src="./images/firebase2.png" style="width: 200px;"></li>
+					</div>
+					<div id="skillBox3"><br>
+						<li style="font-size: 1.4em;"><b>UI Design</b></li>
+						<li><img src="./images/figma.png"></li>
+						<li><img src="./images/xd.png"></li>
+						<li><img src="./images/ps.png"></li>
+						<li><img src="./images/illustrator.png"></li>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

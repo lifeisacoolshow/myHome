@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<title>영폴리오</title>
+	<style>
+		#header {
+			background-color: transparent;
+			color: #fdd1d1;
+			cursor: default;
+			height: 3.25em;
+			left: 0;
+			line-height: 3.25em;
+			position: fixed;
+			text-align: right;
+			top: 1em;
+			width: 100%;
+			z-index: 10001;
+			padding: 0 1.5em;
+		}
+
+		#menu {
+			background-color: #444;
+			opacity: 80%;
+		}
+
+		#menu a:hover {
+			font-weight: bold;
+		}
+
+		#footer {
+			background-color: #222;
+			opacity: 80%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header">
+		<div class="logo">
+			<a href="index.html">portfolio <span>by Younghyun</span></a>
+		</div>
+		<a href="#menu"><span>Menu</span></a>
+	</header>
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="skills.html">Skills</a></li>
+			<li><a href="project.html">Project</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="join.html">Join</a></li>
+		</ul>
+	</nav>
+	<section id="banner" class="bg-img" data-bg="star.png">
+		<div class="inner">
+			<header>
+				<h1>Welcome,<br>my World</h1>
+			</header>
+		</div>
+		<a href="#one" class="more">Learn More</a>
+	</section>
+	<!-- About me -->
+	<style>
+		#profBox{
+			float: left;
+			width: 300px;
+			height: 300px;
+			background-color: white;
+			border-radius: 250px;
+			margin-top: 65px;
+			margin-left: 60px;
+			transition: transform 0.5s ease;
+		}
+		#profBox:hover{
+			transform: translateY(-20px);
+		}
+
+		.box .box{
+			margin-left: 50px;
+
+			border-radius: 20px;
+			text-align: left;
+			float: right;
+			width: 50%;
+			transition: transform 0.5s ease;
+		}
+		.box .box>p{
+			color: white;
+			font-size: 20px;
+		}
+		@keyframes postAni{
+			25%{
+				transform: rotate(2deg) scale(1.01);
+			}
+			50%{
+				transform: rotate(0deg) scale(1);
+			}
+			75%{
+				transform: rotate(-2deg) scale(1.01);
+			}
+		}
+		.box .box:hover{
+			transform: translateY(-20px);
+		}
+		.inner-circle:hover{
+			transform: translateY(-20px);
+		}
+
+	</style>
+	<section id="one" class="wrapper post bg-img" data-bg="star.png">
+		<div class="inner">
+			<article class="box">
+				<header>
+					<h2>About me👻</h2>
+					<p>Hello, I'm Younghyun.</p><br><br>
+				</header>
+				<div class="content">
+					<div id="profBox">
+						<img src="./images/미모지.jpg" style="width:250px; height:280px; border-radius: 250px;">
+					</div>
+					<div class="box">
+						<p>
+							안녕하세요<br>
+							신입 개발자를 꿈꾸며,<br>
+							공부하고 있는 김영현입니다.<br><hr>
+							<b>Name:</b> Kim YoungHyun<br>
+							<b>Birth:</b> 98.05.18<br>
+							<b>Addr:</b> 경기도 고양시<br>
+							<b>Major:</b> Architecture<br>
+						</p>
+					</div>
+				</div>
+			</article>
+		</div>
+		<a href="#two" class="more">Learn More</a>
+	</section>
+	<!-- My vision -->
+	<style>
+		.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+	</style>
+	<section id="two" class="wrapper post bg-img" data-bg="star.png">
+		<div class="inner">
+			<article class="box">
+				<header>
+					<h2>My Career✨</h2>
+					<p>Want to become such a talented person.</p><br><br>
+				</header>
+				<div class="content">
+					<div class="row text-center justify-content-center mb-5">
+						<div class="col-xl-6 col-lg-8">
+							<h2 class="font-weight-bold"></h2>
+							<p class="text-muted"></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+								<div class="timeline-step">
+									<div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" data-original-title="2018">
+										<div class="inner-circle"></div>
+										<p class="h6 mt-3 mb-1">2018</p>
+										<p class="h6 text-muted mb-0 mb-lg-0">[세종시 청년사업: <br>폐상가리모델링] 참여</p>
+									</div>
+								</div>
+								<div class="timeline-step">
+									<div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" data-original-title="2020">
+										<div class="inner-circle"></div>
+										<p class="h6 mt-3 mb-1">2020</p>
+										<p class="h6 text-muted mb-0 mb-lg-0"><b>[SIMMONS]</b> <br>VMD DESIGN INTERN</p>
+									</div>
+								</div>
+								<div class="timeline-step">
+									<div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-original-title="2021">
+										<div class="inner-circle"></div>
+										<p class="h6 mt-3 mb-1">2021</p>
+										<p class="h6 text-muted mb-0 mb-lg-0"><b>[한샘]</b> <br>INTERIOR DESIGNER</p>
+									</div>
+								</div>
+								<div class="timeline-step">
+									<div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-original-title="2024">
+										<div class="inner-circle" style="background-color: yellow;"></div>
+										<p class="h6 mt-3 mb-1">2024</p>
+										<p class="h6 text-muted mb-0 mb-lg-0"><b>[ICT인재개발원]</b><br>훈련과정참여</p>
+									</div>
+								</div>
+								<div class="timeline-step mb-0">
+									<div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-original-title="2025">
+										<div class="inner-circle" style="background-color: yellow;"></div>
+										<p class="h6 mt-3 mb-1">2025</p>
+										<p class="h6 text-muted mb-0 mb-lg-0">개발자로서<br> <b>첫커리어</b> 시작</p>
+									</div>
+								</div>
+								<div class="timeline-step mb-0">
+									<div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-original-title="2025">
+										<div class="inner-circle" style="background-color: yellow;"></div>
+										<p class="h6 mt-3 mb-1">n년후</p>
+										<p class="h6 text-muted mb-0 mb-lg-0">신기술에 적극적으로 도전하는<b>시니어 개발자</b>로 성장</p>
+									</div>
+								</div>
+								<div class="timeline-step mb-0">
+									<div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-original-title="2025">
+										<div class="inner-circle" style="opacity: 0;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<a href="#three" class="more">Learn More</a>
+	</section>
+	<style>
+		#thirdBox li, #thirdBox ul{
+			list-style-type: none;
+		}
+		#gitBox{
+			width: 45%;
+			height: auto;
+			float: left;
+			margin: 20px;
+			background-color: white;
+			border-radius: 20px;
+		}
+		#gitBox li{
+			margin-left: 15px;
+		}
+		#tistoryBox li{
+			margin-left: 20px;
+		}
+		#tistoryBox{
+			width: 45%;
+			height: auto;
+			float: left;
+			margin: 20px;
+			background-color: white;
+			border-radius: 20px;
+		}
+		#thirdBox{
+			color: #222;
+		}
+		#gitBox li, #tistoryBox li{
+			text-align: left;
+		}
+		#thirdBox a:link, #thirdBox a:visited{
+			text-decoration: none;
+		}
+		#thirdBox h4:hover{
+			font-weight: bold;
+			color: rgb(39, 39, 114);
+		}
+		#thirdBox h4{
+			color: lightskyblue;
+		}
+		@keyframes postAni{
+			25%{
+				transform: rotate(2deg) scale(1.01);
+			}
+			50%{
+				transform: rotate(0deg) scale(1);
+			}
+			75%{
+				transform: rotate(-2deg) scale(1.01);
+			}
+		}
+		.content>#thirdBox>#gitBox:hover{
+			opacity:0.9;
+			animation: postAni 0.8s linear 1;
+		}
+		.content>#thirdBox>#tistoryBox:hover{
+			opacity:0.9;
+			animation: postAni 0.8s linear 1;
+		}
+	</style>
+	<!-- My repository -->
+	<section id="three" class="wrapper post bg-img" data-bg="star.png">
+		<div class="inner">
+			<article class="box">
+				<header>
+					<h2>My repository📥</h2>
+					<p>Used for development study.</p><br><br>
+				</header>
+				<div class="content" >
+					<div id="thirdBox">
+						<div id="gitBox">
+							<header>
+								<img src="./images/Daco_5795435.png" style="width: auto; height: 50px; margin-top: 18px; margin-bottom: 5px;">
+								
+								<h3 style="color: #222;">Source Code Repository</h3>
+								<a href="https://github.com/lifeisacoolshow" target="_blank"><h4>https://github.com/lifeisacoolshow</h4></a>
+							</header>
+							<ul>
+								<li>-과거 프로젝트, 프로그램, 앱의 소스코드</li>
+								<li>-혼자서 코딩 연습을 위해 끄적이던 소스코드</li>
+								<li>-수강한 수업들의 코딩 과제 소스코드</li>
+							</ul>
+						</div>
+						<div id="tistoryBox">
+							<header>
+								<img src="./images/logotype.png" style="width: auto; height: 60px; margin-top: 10px;">
+								
+								<h3 style="color: #222;">Blog for studying</h3>
+								<a href="https://watermelon-todiefor.tistory.com/" target="_blank"><h4>https://watermelon-todiefor.tistory.com</h4></a>
+							</header>
+							<ul>
+								<li>-공부한 것을 내 코드로 체화하기 위한 기록</li>
+								<li>-수강한 수업들의 내용 복습 겸 정리</li>
+								<li>-개발 관련 지식을 정리하고 공유</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

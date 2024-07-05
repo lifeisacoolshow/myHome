@@ -95,7 +95,6 @@
             var birthdate = document.getElementById('birthdate').value;
             var email = document.getElementById('email').value;
 
-            // 아이디, 비밀번호, 이름, 이메일의 정규표현식을 여기에 작성하세요
             var userIdRegex = /^[a-zA-Z0-9]{4,12}$/;
             var passwordRegex = /^[a-zA-Z0-9!@#$%^&*()_+]{6,20}$/;
             var fullNameRegex = /^[a-zA-Z\s]{2,30}$/;
@@ -120,9 +119,7 @@
                 alert('이름은 영문자로만 2자 이상 30자 이하여야 합니다.');
                 return false;
             }
-
-            // 생년월일 유효성 검사 (선택적으로 추가 가능)
-
+            
             if (!emailRegex.test(email)) {
                 alert('유효한 이메일 주소를 입력해주세요.');
                 return false;
@@ -229,10 +226,10 @@
                                     <div id="span"> @ </div>
                                     <select id="emailDomain" name="emailDomain">
                                         <option id="qq" value="gmail.com">gmail.com</option>
-                                        <option value="naver.com">naver.com</option>
-                                        <option value="hanmail.net">hanmail.net</option>
-                                        <option value="daum.net">daum.net</option>
-                                        <option value="yahoo.com">yahoo.com</option>
+                                        <option value="naver.com" style="color:#222">naver.com</option>
+                                        <option value="hanmail.net" style="color:#222">hanmail.net</option>
+                                        <option value="daum.net" style="color:#222">daum.net</option>
+                                        <option value="yahoo.com" style="color:#222">yahoo.com</option>
                                     </select>
                                     <hr>
                                 </div>

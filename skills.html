@@ -82,9 +82,20 @@
 				transform: rotate(-2deg) scale(1.01);
 			}
 		}
-		#skillBox1:hover, #skillBox2:hover, #skillBox3:hover{
+		@keyframes postAni2{
+			25%{
+				transform: rotate(15deg) scale(1.01);
+			}
+			50%{
+				transform: rotate(0deg) scale(1);
+			}
+			75%{
+				transform: rotate(-15deg) scale(1.01);
+			}
+		}
+		#skillBox1 img:hover, #skillBox2 img:hover, #skillBox3 img:hover{
 			opacity:0.9;
-			animation: postAni 0.8s linear 1;
+			animation: postAni2 0.8s linear 1;
 		}
 	</style>
 	<section id="post" class="wrapper bg-img" data-bg="star.png">
